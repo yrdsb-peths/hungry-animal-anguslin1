@@ -19,7 +19,9 @@ public class MyWorld extends World
         super(600, 400, 1); 
         
         Elephant e = new Elephant();
-        addObject(e, 300, 350);
+        addObject(e, 310, 350);
+        Bear b = new Bear();
+        addObject(b, 245, 350);
         
         spawnApple();
     }
