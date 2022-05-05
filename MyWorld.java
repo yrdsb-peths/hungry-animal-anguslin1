@@ -8,14 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    public static int score= 0;
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
         Elephant e = new Elephant();
@@ -28,7 +27,7 @@ public class MyWorld extends World
     
     public void spawnApple(){
         int x = Greenfoot.getRandomNumber(600);
-        int y = 0;
+        int y = Greenfoot.getRandomNumber(150);
         
         Apple apple = new Apple();
         addObject(apple, x, y);
